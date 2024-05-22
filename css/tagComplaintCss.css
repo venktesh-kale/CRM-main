@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFDD0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    /* background-color: #fff; */
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form-section {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.form-section label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-section input[type="text"],
+.form-section select,
+.form-section textarea,
+.form-section input[type="datetime-local"] {
+    width: calc(100% - 20px); /* Adjusted width */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-section select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 30px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 8 8"><path d="M4 0l4 8H0z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 8px 8px;
+}
+
+.form-section textarea {
+    height: 113px;
+}
+
+.bottom-section {
+    text-align: center;
+}
+
+.button-wrapper {
+    margin-top: 20px;
+}
+
+.button-wrapper input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-wrapper input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+}

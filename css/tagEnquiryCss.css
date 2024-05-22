@@ -1,0 +1,115 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFDD0
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    /* background-color: #70a6c5; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #74EBD5;
+background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+
+
+
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Form wrapper */
+.form-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Form sections */
+.form-section {
+    width: 48%;
+}
+
+/* Left and right sections */
+.left-section {
+    float: left;
+}
+
+.right-section {
+    float: right;
+}
+
+/* Form labels */
+label {
+    display: block;
+    margin-top: 15px;
+    color: #666;
+}
+
+/* Input fields and select */
+input[type="text"],
+input[type="datetime-local"],
+textarea,
+select {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    
+}
+
+
+/* Select dropdown */
+select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23494c4c" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M5.9 7.5L10 11.6l4.1-4.1c.2-.2.5-.2.7 0 .2.2.2.5 0 .7l-4.7 4.7c-.1.1-.2.2-.4.2s-.3-.1-.4-.2L5.2 8.2c-.2-.2-.2-.5 0-.7.2-.1.5-.1.7 0z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+/* Submit button */
+input[type="submit"] {
+    width: 20%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0471e6;
+}
+
+/* Bottom section */
+.bottom-section {
+    text-align: center;
+}
+
+/* Button wrapper */
+.button-wrapper {
+    margin-top: 20px;
+}
+
+textarea {
+    width: calc(100% - 22px); /* Adjust width to match input fields */
+    height: 35px; /* Set desired height */
+    resize: none; /* Disable textarea resizing */
+    overflow: auto; /* Hide scrollbars */
+}
+#feedback{
+    height: 35px;
+}

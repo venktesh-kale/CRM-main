@@ -1,0 +1,39 @@
+
+/* CSS for the table container */
+.table-container {
+    margin-top: 0px;
+    overflow-x: auto;
+    padding: 15px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* CSS for the data table */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    border : 2px solid black;
+}
+
+.data-table th, .data-table td {
+    border: 1px solid #949292;
+    padding: 8px;
+    text-align: left;
+}
+
+.data-table th {
+    background-color: #f2f2f2;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.data-table tr:hover {
+    background-color: #ddd;
+}
+

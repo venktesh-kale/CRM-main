@@ -1,0 +1,31 @@
+.BGL-div{
+    padding: 15px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bgl-table {
+    width: 100%;
+    border-collapse: collapse;
+    border : 2px solid black;
+}
+
+
+.bgl-table th, .bgl-table td {
+    border: 1px solid #949292;
+    padding: 8px;
+    text-align: left;
+}
+
+.bgl-table th {
+    background-color: #f2f2f2;
+}
+
+.bgl-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.bgl-table tr:hover {
+    background-color: #ddd;
+}

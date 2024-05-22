@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CES | Dashboard</title>
+    <link rel="stylesheet" type = "text/css" href="css/NewDashboardCss.css">
+    <link rel="stylesheet" type = "text/css" href= "css/BGLReviewCss.css" >
+    <link rel="stylesheet" type = "text/css" href= "css/PenaltyReviewCss.css" >
+    <link rel="stylesheet" type = "text/css" href= "css/EnquiryHistoryCss.css" >
+    <link rel="stylesheet" type = "text/css" href="css/ComplaintHistoryCss.css">
+    
+</head>
+<body>
+    
+    <!-----------------------------popups in dashboard-------------------------------------->
+    <div class="popback" id="popback"></div>
+
+
+      <!-- popup notification-->
+      <div class="popbody_notification_before" id="popbody_notification_before">
+
+        <div class="crossdiv">
+            <h2>Notification</h2>
+            <img src="NewImages/white cross.png" alt="" onclick="notiPop()">
+        </div>
+
+        
+        <div class="notidiv">
+
+            <div class="notibox">
+               <div>
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, ullam.</p>
+               </div>
+
+               <img src="NewImages/black cross icon.png" alt="">
+            </div>
+
+            <div class="notibox">
+                <div>
+                 <h3>Lorem, ipsum dolor.</h3>
+                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, ullam.</p>
+                </div>
+ 
+                <img src="NewImages/black cross icon.png" alt="">
+             </div>
+
+             <div class="notibox">
+                <div>
+                 <h3>Lorem, ipsum dolor.</h3>
+                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, ullam.</p>
+                </div>
+ 
+                <img src="NewImages/black cross icon.png" alt="">
+             </div>
+ 
+
+               
+
+        </div>    
+    </div>
+
+      <!-- popup serach -->
+      <div class="popbody_search_before" id="popbody_search_before">
+
+        <div class="crossdiv">
+            <img src="NewImages/white cross.png" alt="" onclick="serachPop()">
+        </div>
+
+        <form action="">
+            <input type="search" name="" id="" placeholder="Search in Portal">
+            <button type="submit"><img src="NewImages/serach icon white.png" alt=""></button>
+        </form>
+        
+        <div class="src_resultbox">
+            <div>
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, ullam.</p>
+            </div>
+
+            <div>
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, ullam.</p>
+            </div>
+
+            <div>
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, ullam.</p>
+            </div>
+
+            <div>
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, ullam.</p>
+            </div>
+
+            <div>
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, ullam.</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Quick View popup-->
+    <div class="popbody_view_before" id="popbody_view">
+        <div class="popup">
+
+            <div class="pophead">
+                <p class="poptitle">Quick View</p>
+                <p onclick="popup_view()"><img src="NewImages/white cross.png" alt="" style="height: 10px; width: 10px;"></p>
+            </div>
+
+            <div class="pop_profile">
+                <img src="NewImages/profile photo.jpg" alt="">
+                <h2 id="customerNameInQuickView">Mr. </h2>
+            <ul>
+                <li><b>Mobile No:-</b> <span id="mobileNumber"></span></li>
+                <li><b>Operator ID:-</b> <span id="cscId"></span></li>
+            </ul>
+            </div>
+
+            <div class="extra_info">
+
+                <table id="customerDataTable">
+                    <tr>
+                        <th>District :</th>
+                      
+                    </tr>
+                    <tr>
+                        <th>Sub district :</th>
+            
+                    </tr> 
+                    <tr>
+                        <th>Total Txn :</th>
+                
+                    </tr>
+                    <tr>
+                        <th>PAN Applications :</th>
+  
+                    </tr>   
+                    <tr>
+                        <th>Agriculure Service : </th>
+                    
+                    </tr>                        
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- action pop up -->
+    <div class="popbody_before" id="popup">
+        <div class="popup">
+
+            <div class="pophead">
+                <p class="poptitle">Actions</p>
+                <p onclick="popup_action()"><img src="NewImages/white cross.png" alt="" style="height: 10px; width: 10px;"></p>
+            </div>
+
+            <div class="pop_profile">
+                <img src="NewImages/profile photo.jpg" alt="">
+                <h3 id="customerNameInActions">Mr. </h3>
+                <ul>
+                    <li>Asst. Programmer</li>
+                    <li>10 Yr Experience</li>         
+                    <li>Lorem ipsum dolo</li>          
+                </ul>
+            </div>
+
+            <div class="action_panel">
+
+                <a href="">
+                    <div>
+                        <img src="NewImages/call make icon.png" alt="">
+                        <center><p>Make Call</p></center>
+                    </div>
+                </a>
+
+                <a href="">               
+                    <div>
+                        <img src="NewImages/call hold.png" alt="">
+                        <center><p>Hold</p></center>
+                    </div>
+                </a> 
+
+                <a href="">   
+                <div>
+                    <img src="NewImages/conferance.png" alt="">
+                    <center><p>Conference</p></center>
+                </div>
+                </a> 
+
+                <a href="">   
+                    <div>
+                        <img src="NewImages/notes icon.png" alt="">
+                        <center><p>Releases</p></center>
+                    </div>
+                </a> 
+
+
+                <a href="tag_enquiry.php">   
+                    <div>
+                        <img src="NewImages/enquiry icon.png" alt="">
+                        <center><p>Tag Enquiry</p></center>
+                    </div> 
+                </a>
+
+                <a href="tag_complaint.php">   
+                    <div>
+                        <img src="NewImages/Complaint icon.png" alt="">
+                        <center><p>Tag Complaint</p></center>
+                    </div>
+                </a>  
+                
+                <a href="tag_technical_resolution.php">   
+                    <div>
+                        <img src="NewImages/emp Profile.png" alt="">
+                        <center><p>Tag Technical Resolution</p></center>
+                    </div>
+                </a>  
+
+                <a href="#" onclick="profileInfo()">   
+                    <div>
+                        <img src="NewImages/more info icon.png" alt="">
+                        <center><p>View More Info</p></center>
+                    </div>
+                </a>  
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- upperstrip-------------------------------- -->
+    <nav class="upperstrip">
+
+        <div class="companydiv">
+            <div class="logo">
+                <img src="NewImages/logo-removebg-preview.png" alt="logo of CES">
+            </div>
+
+            <div class="com_name">
+                    <p>CHANAKYA</p><p>E-SERVICES</p>
+            </div>
+        </div>
+
+        
+        <div class="upperinfo">
+            <img src="NewImages/serach icon white.png" alt="serach icon" onclick="serachPop()">
+            <img src="NewImages/notifi icon.png" alt="notifi icon.png" onclick="notiPop()">
+            <div class="userdiv">
+                <button class="userbox">
+                    <img src="NewImages/profile photo.jpg" alt="profile photo">
+                    <p id="customerNameOnLogoutBtn">Mr. user1</p>
+                    <img src="NewImages/down arrow.png" alt="">
+                </button >
+                <div class="dropdown-content">
+                    <a href="logout.php">Log out<img src="NewImages/login icon.png" alt=""></a>
+                  </div>
+            </div>
+
+        
+        </div>
+    </nav>
+
+
+
+
+    <div class="side_navbar" id="side_navbar">
+
+        <div id="ham_icon" onclick="onClickMenu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+
+        <ul class="navmenu" id="navmenu">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">All Profiles</a></li>
+            <li><a href="#">Calling History</a></li>
+            <li><a href="#">Complaint history</a></li>
+            <li><a href="#">BGL Statement</a></li>
+            <li><a href="#">Penalty amount</a></li>
+            <li><a href="#">Documents</a></li>
+            <li><a href="#">Deposit amount</a></li>
+            <li><a href="#">Activation History</a></li>
+            <li><a href="#">Operator Work History</a></li>
+            <li><a href="#">Enquiry</a></li>
+            <li><a href="#">Complaint</a></li>
+        </ul>
+
+        </div>
+    </div>
+
+    <div class="dbbody">
+
+        <div class="tabname">
+            <h1>Dashboard</h1>
+        </div>
+
+        <div class="db1">
+            <form id="searchForm">
+                <input type="text" name="customer_id" id="customer_id" placeholder="Enter">
+                <button type="submit">Search</button>
+            </form>
+               
+            <div class="resultbox">
+
+                <div class="resultchild">
+                    <img src="NewImages/profile photo.jpg" alt="">
+
+                    <div class="name">
+                        <h6 id="customerNameDashboard">Mr. </h6>
+                        <!-- <p>(Lorem ipsum dolor sit. Tenetur, distinctio!)</p> -->
+                    </div>
+
+                    <div class="infobox">
+                        <img src="NewImages/list icon.png" alt="">
+                        <p>Info</p>
+                    </div>
+
+                    <div class="viewbox" onclick="popup_view()">
+                        <img src="NewImages/view icon.png" alt="" >
+                        <p>View</p>
+                    </div>
+
+                    <div class="actionbox" onclick="popup_action()">
+                        <img src="NewImages/action icon.png" alt="">
+                        <p>Actions</p>
+                    </div>
+                </div>
+
+                
+
+                
+
+
+            </div>
+        </div>
+        <div class="db2">
+           <div class="optionbox1">
+
+                <a href="">
+                    <div class="opnitem">
+                        <img src="NewImages/mail icon.png" alt="">
+                        <p>Mail</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="opnitem">
+                        <img src="NewImages/chat icon.png" alt="">
+                        <p>Chat</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="opnitem">
+                        <img src="NewImages/google icon.png" alt="">
+                        <p>Google</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="opnitem">
+                        <img src="NewImages/adhar icon.png" alt="">
+                        <p>Adhar Portal</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="opnitem">
+                        <img src="NewImages/notepad icon.png" alt="">
+                        <p>Notepad</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="opnitem">
+                        <img src="NewImages/excel icon.png" alt="">
+                        <p>Excel</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="opnitem">
+                        <img src="NewImages/ms word icon.png" alt="">
+                        <p>Word</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="opnitem">
+                        <img src="NewImages/ppt icon.png" alt="">
+                        <p>PPT</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="opnitem">
+                        <img src="NewImages/meet icon.png" alt="">
+                        <p>Meet</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="opnitem">
+                        <img src="NewImages/file manager icon.png" alt="">
+                        <p>File Manager</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="opnitem">
+                        <img src="NewImages/notes icon.png" alt="">
+                        <p>Notes</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="opnitem">
+                        <img src="NewImages/paint icon.png" alt="">
+                        <p>Paint</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="opnitem">
+                        <img src="NewImages/access icon.png" alt="">
+                        <p>Access Request</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="opnitem">
+                        <img src="NewImages/emp Profile.png" alt="">
+                        <center><p>Employee Profile & Docs </p></center>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="opnitem">
+                        <img src="NewImages/attend icon.png" alt="">
+                         <center><p>EmpEntry & Attendance</p></center>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="opnitem">
+                        <img src="NewImages/bug icon.png" alt="">
+                        <p>CRM Bug Report</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="opnitem">
+                        <img src="NewImages/suggestion icon.png" alt="">
+                        <center><p>Suggestion & feedback</p></center>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="opnitem">
+                        <img src="NewImages/log in icon.png" alt="">
+                        <center><p>Login Logout Report</p></center>
+                    </div>
+                </a>
+
+           </div>
+           <div class="optionbox2">
+
+            <a href="#" onclick="fetchBGLReview()">
+                <div class="opnitem">
+                    <img src="NewImages/review icon.png" alt="">
+                    <p>BGL Review</p>
+                </div>
+            </a>
+
+            <a href="#" onclick="fetchPenaltyReview()">
+                <div class="opnitem">
+                    <img src="NewImages/penalty icon.png" alt="">
+                    <p>Penalty Review</p>
+                </div>
+            </a>
+
+            <a href="#" onclick="fetchEnquiryHistory()">
+                <div class="opnitem">
+                    <img src="NewImages/enquiry icon.png" alt="">
+                    <p>Enquiry Review</p>
+                </div>
+            </a>
+
+            <a href="#" onclick="fetchComplaintHistory()">
+                <div class="opnitem">
+                    <img src="NewImages/Complaint icon.png" alt="">
+                    <p>Complaint History</p>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="opnitem">
+                    <img src="NewImages/action.png" alt="">
+                    <p>Actions History</p>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="opnitem">
+                    <img src="NewImages/work icon.png" alt="">
+                    <p>Work History</p>
+                </div>
+            </a>
+
+            <a href="#" onclick="fetchCallHistory()">
+                <div class="opnitem">
+                    <img src="NewImages/call histrory icon.png" alt="">
+                    <center><p>Technical Enquiry / Call History</p></center>
+                </div>
+            </a>
+
+
+           </div>
+
+        </div>
+        
+
+        
+    </div>
+    <br><br>
+    <div id="customer-history">
+        
+    </div>
+
+
+
+    <script src="Javascript/script.js"></script>
+</body>
+</html>
